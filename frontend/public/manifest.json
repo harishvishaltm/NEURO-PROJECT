@@ -1,0 +1,17 @@
+{
+  "short_name": "NeuroVoice BCI",
+  "name": "NeuroVoice BCI - Assistive Imagined Speech System",
+  "description": "Brain-Computer Interface for Paralyzed & ALS Patient Communication",
+  "icons": [
+    {
+      "src": "/favicon.svg",
+      "type": "image/svg+xml",
+      "sizes": "192x192 512x512"
+    }
+  ],
+  "start_url": "/",
+  "background_color": "#0a0f1d",
+  "theme_color": "#0a0f1d",
+  "display": "standalone",
+  "orientation": "any"
+}

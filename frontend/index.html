@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="en" class="light" style="color-scheme: light !important;">
+  <head>
+    <meta charset="UTF-8" />
+    <!-- Prevent Dark Reader extension and browser auto-dark inverters -->
+    <meta name="darkreader-lock" content="darkreader-lock" />
+    <meta name="color-scheme" content="light" />
+    <meta name="theme-color" content="#f0f7ff" />
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%230284c7' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'><path d='M9.5 2A2.5 2.5 0 0 1 12 4.5v15a2.5 2.5 0 0 1-4.96.44 2.5 2.5 0 0 1-2.96-3.08 3 3 0 0 1-.34-5.58 2.5 2.5 0 0 1 1.32-4.24 2.5 2.5 0 0 1 4.44-2.54z'/><path d='M14.5 2A2.5 2.5 0 0 0 12 4.5v15a2.5 2.5 0 0 0 4.96.44 2.5 2.5 0 0 0 2.96-3.08 3 3 0 0 0 .34-5.58 2.5 2.5 0 0 0-1.32-4.24 2.5 2.5 0 0 0-4.44-2.54z'/></svg>" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="default" />
+    <link rel="manifest" href="/manifest.json" />
+    <title>NeuroVoice BCI Workstation — Clinical Speech Decoding System</title>
+    <script>
+      (function() {
+        document.documentElement.classList.remove('dark');
+        document.documentElement.classList.add('light');
+        document.documentElement.style.colorScheme = 'light';
+        // Block Dark Reader dynamic injection
+        const meta = document.createElement('meta');
+        meta.name = 'darkreader-lock';
+        meta.content = 'darkreader-lock';
+        document.head.appendChild(meta);
+      })();
+    </script>
+  </head>
+  <body class="bg-[#f0f7ff] text-slate-800 antialiased overflow-x-hidden selection:bg-sky-500/20 selection:text-sky-900" style="background-color: #f0f7ff !important; color: #0f172a !important;">
+    <div id="root" style="background-color: #f0f7ff !important;"></div>
+    <script type="module" src="/src/main.jsx"></script>
+  </body>
+</html>

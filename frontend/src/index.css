@@ -1,0 +1,54 @@
+@import "tailwindcss";
+
+:root, html {
+  color-scheme: light !important;
+  --color-scheme: light !important;
+  background-color: #f0f7ff !important;
+}
+
+html, body, #root {
+  background-color: #f0f7ff !important;
+  background: #f0f7ff !important;
+  color: #0f172a !important;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+  overflow-x: hidden;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* Force light theme even if browser or OS requests dark mode */
+@media (prefers-color-scheme: dark) {
+  :root, html, body, #root {
+    background-color: #f0f7ff !important;
+    background: #f0f7ff !important;
+    color: #0f172a !important;
+    color-scheme: light !important;
+  }
+}
+
+/* Medical Workstation Card utility */
+.medical-card {
+  background-color: #ffffff;
+  border: 1px solid #e0f2fe;
+  box-shadow: 0 1px 3px 0 rgba(2, 132, 199, 0.05), 0 1px 2px -1px rgba(2, 132, 199, 0.05);
+  border-radius: 1rem;
+}
+
+/* Custom crisp medical scrollbar in soft sky-blue */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f0f9ff;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #7dd3fc;
+  border-radius: 9999px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #0284c7;
+}
+
